@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-qkif
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/rhtap-demo-logr-tenant/rhtap-demo-app/hacbs-test-project-qkif@sha256:0bc862faee2d2319069bb50749a9f782c0a6f0422925a25479bb32cef334ee32
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
